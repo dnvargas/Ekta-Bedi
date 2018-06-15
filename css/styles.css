@@ -1,0 +1,49 @@
+body{
+  font-family: ;
+  font-size:;
+  line-height:1.5;
+  font: 15px/1.5 Ariel, Helvetica, sans-serif;
+}
+/*Global*/
+.container{
+  width: 89%;
+  margin: auto;
+  overflow: hidden;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+/* Header*/
+header{
+  background:;
+  color:;
+  padding-top:;
+  min-height:;
+  border-bottom:;
+}
+
+header a{
+  color:;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: ;
+}
+
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px;
+}
+header #nav-bar{
+  float: left;
+}
+header #nav-bar h1{
+  margin: 0;
+}
+header nav{
+  float: right;
+  margin-top:18px;
+}
