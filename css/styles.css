@@ -14,36 +14,37 @@ ul{
   margin: 0;
   padding: 0;
 }
-
-/* Header*/
+/*Header & Nav*/
 header{
-  background:;
-  color:;
-  padding-top:;
-  min-height:;
-  border-bottom:;
-}
-
-header a{
-  color:;
-  text-decoration: none;
+  background: #07A6EF;
+  border: 1px solid #979797;
+  border-bottom: 5px dashed #000 ;
+  color: #FFFFFF;
   text-transform: uppercase;
-  font-size: ;
 }
 
-
-header li{
+header h1{
   float: left;
-  display: inline;
-  padding: 0 20px;
-}
-header #nav-bar{
-  float: left;
-}
-header #nav-bar h1{
+  letter-spacing: 5px;
+  text-align: center;
   margin: 0;
+  font-family: Arial-BoldMT;
+  font-size: 35px;
+  color: #FFFFFF;
+  letter-spacing: 8.75px;
+  text-align: center;
 }
 header nav{
   float: right;
-  margin-top:18px;
+  padding-top:10px;
+}
+nav a{
+  padding: 15px 10px;
+  text-decoration: none;
+}
+header li{
+  display: inline-block;
+  padding: 0 20px;
+  font-family: Arial-BoldMT;
+  font-size: 20px;
 }
