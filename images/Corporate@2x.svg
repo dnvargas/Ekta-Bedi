@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="186px" height="171px" viewBox="0 0 186 171" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Corporate@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <text id="text-1" font-family="DINCondensed-Bold, DIN Condensed" font-size="35" font-style="condensed" font-weight="bold" line-spacing="35" letter-spacing="0.540000021" fill="#FFFFFF">
+            <tspan x="27.9166666" y="102.25">CORPORAT</tspan>
+            <tspan x="144.306667" y="102.25">E</tspan>
+        </text>
+        <filter x="-3.0%" y="-4.4%" width="105.9%" height="117.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.412420743 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Final-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="blue-black" transform="translate(-311.000000, -2337.000000)">
+            <g id="Section-3-Industries" transform="translate(0.000000, 2165.000000)">
+                <g id="Corporate" transform="translate(311.000000, 172.000000)">
+                    <path d="M108.626807,168.282632 C103.811187,169.114348 98.8425426,169.549449 93.7629051,169.549449 C93.5747335,169.549449 93.3867142,169.548852 93.1988493,169.547659 C92.9963427,169.548852 92.7936819,169.549449 92.5908688,169.549449 C41.454344,169.549449 0,131.594512 0,84.7747243 C0,37.9549369 41.454344,0 92.5908688,0 C143.727394,0 185.181738,37.9549369 185.181738,84.7747243 C185.181738,126.587162 152.120269,161.329532 108.62683,168.282628 Z M108.626807,168.282632 C145.539658,161.907332 173.461374,132.228541 173.461374,96.5787998 C173.461374,56.2782233 137.779154,23.6081511 93.7629051,23.6081511 C49.7466559,23.6081511 14.0644358,56.2782233 14.0644358,96.5787998 C14.0644358,136.707089 49.4422215,169.269977 93.1988493,169.547659 C98.457098,169.516702 103.611325,169.084434 108.62683,168.282628 Z" id="Combined-Shape" fill="#70C5EC"></path>
+                    <ellipse id="Oval-4" fill="#464646" cx="94.2317214" cy="97.2226569" rx="80.4016893" ry="73.6145058"></ellipse>
+                    <g fill="#FFFFFF" fill-opacity="1">
+                        <use filter="url(#filter-2)" xlink:href="#text-1"></use>
+                        <use xlink:href="#text-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

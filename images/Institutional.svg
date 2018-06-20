@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="185px" height="170px" viewBox="0 0 185 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Institutional</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <text id="text-1" font-family="DINCondensed-Bold, DIN Condensed" font-size="35" font-style="condensed" font-weight="bold" line-spacing="35" letter-spacing="0.540000021" fill="#FFFFFF">
+            <tspan x="32.1752603" y="103.527027">EDUCATIO</tspan>
+            <tspan x="139.50026" y="103.527027">N</tspan>
+        </text>
+        <filter x="-2.5%" y="-5.7%" width="105.0%" height="122.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.412420743 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Final-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="blue-black" transform="translate(-725.000000, -2337.000000)">
+            <g id="Section-3-Industries" transform="translate(0.000000, 2165.000000)">
+                <g id="Institutional" transform="translate(725.000000, 172.000000)">
+                    <path d="M108.503173,168.703343 C103.693034,169.537138 98.7300448,169.973326 93.6561887,169.973326 C93.4682313,169.973326 93.2804259,169.972728 93.0927749,169.971533 C92.8904988,169.972728 92.6880687,169.973326 92.4854864,169.973326 C41.4071627,169.973326 0,131.923501 0,84.9866631 C0,38.0498251 41.4071627,0 92.4854864,0 C143.56381,0 184.970973,38.0498251 184.970973,84.9866631 C184.970973,126.903633 151.947133,161.73286 108.503196,168.703339 Z M108.503173,168.703343 C145.374011,162.312104 173.263949,132.559116 173.263949,96.8202491 C173.263949,56.4189202 137.622341,23.667172 93.6561887,23.667172 C49.6900367,23.667172 14.0484283,56.4189202 14.0484283,96.8202491 C14.0484283,137.04886 49.3859488,169.693156 93.0927749,169.971533 C98.345039,169.940497 103.4934,169.507149 108.503196,168.703339 Z" id="Combined-Shape" fill="#70C5EC"></path>
+                    <ellipse id="Oval-4" fill="#464646" cx="93.6561887" cy="96.8202491" rx="79.6077604" ry="73.1530771"></ellipse>
+                    <g id="education" fill="#FFFFFF" fill-opacity="1">
+                        <use filter="url(#filter-2)" xlink:href="#text-1"></use>
+                        <use xlink:href="#text-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
