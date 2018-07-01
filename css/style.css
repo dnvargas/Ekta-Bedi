@@ -66,9 +66,7 @@ display: inline-block;
   color: #07A6EF;
   font-size: 2em;
 }
-.profile-img{
 
-}
 .btn{
   display: inline-block;
   background: #fff;
@@ -136,9 +134,9 @@ display: inline-block;
 
 /* Section C */
 #section-c{
-background: #fff;
-color: #000;
-padding: 2em 1em;
+  background: #fff;
+  color: #000;
+  padding: 2em 1em;
 }
 #section-c .content-title{
   color: #07A6EF;
@@ -155,9 +153,9 @@ padding: 2em 1em;
   padding: 2em 1em;
 }
  #section-d .box{
-background: #fff;
- border: 3px solid #033C4F;
-color: #000;
+  background: #fff;
+  border: 3px solid #033C4F;
+  color: #000;
 }
 
 /* Gallery*/
@@ -168,7 +166,21 @@ color: #000;
 
 #main-footer{
   padding: 2em;
+}
 
+/*About Page*/ 
+#about-main{
+  background-color: #fff;
+  padding: 0 10%;
+}
+.main-content-title{
+  color: #07A6EF;
+  text-transform: uppercase;
+}
+#about-main p{
+  color: #000;
+  margin: 0;
+  padding-top: 5px;
 }
 /****************************************************/
 /*Do not edit above code*/
@@ -190,13 +202,11 @@ color: #000;
 #section-c li{
   display: inline-flex;
 }
-
-
-
-
-
-
-
+/*About page*/
+#about-main{
+  background-color: #fff;
+  padding: 0 20%;
+}
 
 
 
