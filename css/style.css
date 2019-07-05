@@ -165,11 +165,17 @@ display: inline-block;
   color: #000;
 }
 /* Gallery Page */ 
-
+main{
+  min-width: 0;
+}
 .gallery {
   display: grid;
- 
+ grid-gap: 10px;
+ grid-template-columns: 1fr 1fr;
+}
 
+img{
+  max-width: 80%;
 }
 #main-footer{
   background:#333;
