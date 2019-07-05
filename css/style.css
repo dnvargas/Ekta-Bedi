@@ -2,7 +2,7 @@
 body{
   margin: 0;
   font-family: Arial,  Helvetica, sans-serif;
-  background:#333;
+ 
   color:#fff;
   font-size:1.1em;
   line-height: 1.5;
@@ -81,6 +81,7 @@ display: inline-block;
   background: #70C5EC;
   color: #fff;
 }
+
 .socia-link{
   display: inline-block;
 }
@@ -157,21 +158,36 @@ display: inline-block;
   border: 3px solid #033C4F;
   color: #000;
 }
-
-/* Gallery*/
+/********************************************/
+/* Gallery Section On Home Page*/
 #section-e{
   background: #fff;
   color: #000;
 }
-
-#main-footer{
-  padding: 2em;
+/* Gallery Page */ 
+main{
+  min-width: 0;
+}
+.gallery {
+  display: grid;
+ grid-gap: 10px;
+ grid-template-columns: 1fr 1fr;
 }
 
+img{
+  max-width: 80%;
+}
+#main-footer{
+  background:#333;
+  padding: 2em;
+}
+/*****************************************/
 /*About Page*/ 
 #about-main{
   background-color: #fff;
   padding: 0 10%;
+ min-height: calc(85vh - 70px);
+ 
 }
 .main-content-title{
   color: #07A6EF;
@@ -181,6 +197,10 @@ display: inline-block;
   color: #000;
   margin: 0;
   padding-top: 5px;
+}
+#main-footer{
+  height:50px;
+  
 }
 /****************************************************/
 /*Do not edit above code*/
@@ -202,6 +222,8 @@ display: inline-block;
 #section-c li{
   display: inline-flex;
 }
+
+
 /*About page*/
 #about-main{
   padding: 0 20%;
