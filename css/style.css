@@ -2,11 +2,11 @@
 body{
   margin: 0;
   font-family: Arial,  Helvetica, sans-serif;
- 
   color:#fff;
   font-size:1.1em;
   line-height: 1.5;
   text-align: center;
+  text-transform: uppercase;
 }
 h1, h2, h3{
   letter-spacing: 5px;
@@ -17,14 +17,10 @@ p{
   margin: 0;
   padding: 1em 0;
 }
-section .content-title{
-  text-transform: uppercase;
-}
 
 /* Header Nav */
 #header-nav{
   background-color: #07A6EF;
-  text-transform: uppercase;
 }
 header h1 {
   padding: 4px;
@@ -37,7 +33,6 @@ nav a{
 nav a:hover{
   color: #ccc;
 }
-
 nav ul{
   list-style-type: none;
   margin: 0;
@@ -52,7 +47,6 @@ display: inline-block;
   background-color: #fff;
   color: #000;
   min-height: 450px;
-  text-transform: uppercase;
 }
 #showcase  h2{
   padding-top: 30px;
@@ -66,7 +60,10 @@ display: inline-block;
   color: #07A6EF;
   font-size: 2em;
 }
-
+.profile-img{
+  margin: auto;
+}
+  
 .btn{
   display: inline-block;
   background: #fff;
@@ -81,12 +78,39 @@ display: inline-block;
   background: #70C5EC;
   color: #fff;
 }
-
 .socia-link{
   display: inline-block;
 }
 .social{
   padding-bottom: 20px;
+}
+#showcase .content-title-s{
+  grid-area: content-title;
+}
+#showcase .accent{
+  grid-area: accent;
+}
+.profile-img{
+  grid-area: profile-img;
+}
+.lead-text{
+  grid-area: lead-text;
+}
+.btn{
+  grid-area: btn;
+}
+.social{
+  grid-area: social;
+}
+#showcase .content-wrap{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "content-title"
+  "profile-img"
+  "lead-text"
+  "btn"
+  "social";
 }
 
 /* Section A */
@@ -94,7 +118,6 @@ display: inline-block;
   background: #07A6EF;
   color: #fff;
   padding: 2em 1em;
-  text-transform: uppercase;
 }
 #section-a ul{
   list-style-type: none;
@@ -105,7 +128,24 @@ display: inline-block;
   text-decoration: underline;
   padding-top: 15px;
 }
-/* Section B */
+
+.box-1{
+  grid-area: box-1;
+}
+.box-2{
+  grid-area: box-2;
+}
+.box-3{
+  grid-area: box-3;
+}
+.content-wrap-a, .content-wrap-d{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: 
+    "box-1"
+    "box-2"
+    "box-3";
+}
 #section-b {
   background: #464646;
   padding: 2em 1em 1em;
@@ -132,7 +172,13 @@ display: inline-block;
 #section-b li {
   margin-bottom: 1em;
 }
-
+#section-b{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: 
+  "training"
+  "teaching";
+}
 /* Section C */
 #section-c{
   background: #fff;
@@ -158,22 +204,28 @@ display: inline-block;
   border: 3px solid #033C4F;
   color: #000;
 }
-/********************************************/
-/* Gallery Section On Home Page*/
-#section-e{
-  background: #fff;
-  color: #000;
+.box-1{
+  grid-area: box-1;
 }
+.box-2{
+  grid-area: box-2;
+}
+.box-3{
+  grid-area: box-3;
+}
+#main-footer{
+  text-transform: none;
+}
+/*************************************/
 /* Gallery Page */ 
 main{
   min-width: 0;
 }
 .gallery {
-  display: grid;
+ display: grid;
  grid-gap: 10px;
  grid-template-columns: 1fr 1fr;
 }
-
 img{
   max-width: 80%;
 }
@@ -181,17 +233,16 @@ img{
   background:#333;
   padding: 2em;
 }
+
 /*****************************************/
 /*About Page*/ 
 #about-main{
   background-color: #fff;
   padding: 0 10%;
- min-height: calc(85vh - 70px);
- 
+  min-height: calc(85vh - 70px);
 }
 .main-content-title{
   color: #07A6EF;
-  text-transform: uppercase;
 }
 #about-main p{
   color: #000;
@@ -200,36 +251,102 @@ img{
 }
 #main-footer{
   height:50px;
-  
 }
-/****************************************************/
+/************************************/
 /*Do not edit above code*/
 
 /* Media Queries */
 
+/* */
+
 @media (min-width: 700px){
-
-  .grid {
-    display: grid;
-
-}
-#header-nav{
-  grid-column-start: 1;
-  grid-column-end: 3;
-
-}
-
-#section-c li{
+  #showcase .content-wrap{
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: 
+     "profile-img content-title"
+     "profile-img lead-text"
+     "profile-img btn"
+     "profile-img social";
+  }
+  #section-b{
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas:  
+    "training training"
+    "teaching teaching";
+  }
+  #section-b ul{
+    padding-top: 60px;
+    font-size: 20px;
+  }
+  #section-c li{
   display: inline-flex;
+  }
+  /*About page*/
+  #about-main{
+   padding: 0 20%;
+  }
+  .content-wrap-a, .content-wrap-d{
+   grid-template-columns: 2fr 2fr;
+   grid-template-areas: 
+   "box-1 box-2"
+   "box-3 box-3";
+  }
 }
-
-
-/*About page*/
-#about-main{
-  padding: 0 20%;
+/*media queries full screen*/
+/*header & nav*/
+@media (min-width: 768px){
+  #header-nav{
+    padding: 1%;
+  }
+  #header-nav h1{
+    top: -1%;
+    position: absolute;
+  }
+  nav{
+    position: relative;
+    text-align: right;
+  }
 }
-
-
-
-
+@media (min-width: 1024px){
+  #header-nav h1{
+    top: -.5%;
+  }
+  .content-wrap-a, .content-wrap-d{
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-areas: 
+    "box-1 box-2 box-3";
+   }
+   #showcase .content-wrap{
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+     "profile-img content-title content-title"
+     "profile-img lead-text lead-text"
+     "profile-img social btn";
+  }
+ 
+  .profile-img{
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+  }
+  .content-title-s{
+    margin-top: 10px;
+    border-bottom: 3px solid black;
+  }
+  .lead-text{
+    font-size: 20px;
+  }
+  .lead-text, .btn{
+    padding: auto;
+    margin: auto;
+  }
+  .social{
+    margin:auto;
+    padding-bottom: 0px;
+  }
+  #section-b .teaching{
+    padding-bottom: 0px;
+  }
 }
+/**/
