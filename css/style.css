@@ -21,6 +21,7 @@ p{
 /* Header Nav */
 #header-nav{
   background-color: #07A6EF;
+ padding: 10px;
 }
 header h1 {
   padding: 4px;
@@ -267,6 +268,9 @@ img{
      "profile-img lead-text"
      "profile-img btn"
      "profile-img social";
+  }
+  .content-wrap{
+    margin: 30px;
   }
   #section-b{
     grid-template-columns: 2fr 2fr;
