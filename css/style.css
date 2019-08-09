@@ -284,6 +284,7 @@ img{
   /*About page*/
   #about-main{
    padding: 0 20%;
+   text-transform: none;
   }
   .content-wrap-a, .content-wrap-d{
    grid-template-columns: 2fr 2fr;
