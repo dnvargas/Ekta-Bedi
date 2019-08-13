@@ -67,7 +67,6 @@ display: inline-block;
 .profile-img{
   margin: auto;
 }
-  
 .btn{
   display: inline-block;
   background: #fff;
@@ -125,9 +124,16 @@ display: inline-block;
   border-top: 3px dotted #033C4F;
   border-bottom: 3px dotted #033C4F;
 }
-#section-a .underline{
+#section-a .underline, #section-a .underline-2, #section-a .underline-3, #section-b .underline{
    border-top: 2px solid #000;
    padding-top: 15px;
+   margin: 0% 15%;
+}
+#section-a .underline-2{
+  margin: 0% 20%;
+}
+#section-a .underline-3{
+  margin: 0% 25%;
 }
 #section-a ul, #section-a li{
   list-style-type: none;
@@ -192,7 +198,7 @@ display: inline-block;
   padding: 0;
 }
 #section-b li {
-  margin-bottom: 1em;
+  margin: 1.3em;
 }
 #section-b{
   display: grid;
@@ -279,9 +285,14 @@ img{
   padding-top: 5px;
   text-transform: none;
 }
-#main-footer{
-  height:50px;
+footer #main-footer{
+  height:40px;
 }
+/*Contact Page */
+#about-main{
+   min-height: calc(85vh - 100px);
+}
+
 /************************************/
 /* Media Queries */
 
@@ -332,7 +343,6 @@ img{
    "box-1 box-2"
    "box-3 box-3";
   }
-
 }
 /*media queries full screen*/
 /*header & nav*/
