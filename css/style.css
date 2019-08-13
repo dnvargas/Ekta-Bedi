@@ -125,17 +125,20 @@ display: inline-block;
   border-top: 3px dotted #033C4F;
   border-bottom: 3px dotted #033C4F;
 }
+#section-a .underline{
+   border-top: 2px solid #000;
+   padding-top: 15px;
+}
 #section-a ul, #section-a li{
   list-style-type: none;
   text-transform: none;
   margin: 0;
   padding: 0;
-
 }
-
 #section-a h3{
-  padding: 0px;
-  color: rgb(94, 92, 92);
+  padding: 10px 0px;
+  color: #464646;
+  text-shadow: 1px 1px 2px rgb(153, 149, 149);
 }
 #section-a h2{
   color:white;
@@ -153,6 +156,9 @@ display: inline-block;
 .box-3{
   grid-area: box-3;
 }
+.content-wrap-a{
+  margin-top: -20px;
+}
 .content-wrap-a, .content-wrap-d{
   display: grid;
   grid-gap: 20px;
@@ -164,7 +170,6 @@ display: inline-block;
 #section-b {
   background: #464646;
   padding: 2em 1em 1em;
- 
 }
 #section-b .content-title{
   color: #fff;
@@ -237,6 +242,10 @@ display: inline-block;
 #section-d .box, #main-footer{
   text-transform: none;
 }
+#section-d h2{
+  margin-top: -20px;
+}
+
 /*************************************/
 /* Gallery Page */ 
 main{
@@ -274,14 +283,11 @@ img{
   height:50px;
 }
 /************************************/
-/*Do not edit above code*/
-
 /* Media Queries */
-
-/* */
 
 @media (min-width: 700px){
   #showcase .content-wrap{
+    margin: 20px;
     grid-template-columns: 2fr 2fr;
     grid-template-areas: 
      "profile-img content-title"
@@ -289,13 +295,20 @@ img{
      "profile-img btn"
      "profile-img social";
   }
-  .content-wrap{
-    margin: 30px;
+  .profile-img{
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
   }
-  #section-a p{
+  .content-title-s{
+    margin-top: 5px;
+    border-bottom: 3px solid black;
+  }
+  #section-a p, li{
     margin: 0px 30px;
     font-size: 20px;
   }
+  
   #section-b{
     grid-template-columns: 2fr 2fr;
     grid-template-areas:  
@@ -340,11 +353,15 @@ img{
   #header-nav h1{
     top: -.5%;
   }
+  #showcase{
+    margin-top: 40px;
+  }
   .content-wrap-a, .content-wrap-d{
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-areas: 
     "box-1 box-2 box-3";
    }
+  
    #showcase .content-wrap{
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -352,16 +369,6 @@ img{
      "profile-img content-title content-title"
      "profile-img lead-text lead-text"
      "profile-img social btn";
-  }
- 
-  .profile-img{
-    padding: 10px;
-    border-style: solid;
-    border-width: 3px;
-  }
-  .content-title-s{
-    margin-top: 10px;
-    border-bottom: 3px solid black;
   }
   .lead-text{
     font-size: 20px;
@@ -374,9 +381,19 @@ img{
     margin:auto;
     padding-bottom: 0px;
   }
+  #section-a .box-1 h2, #section-a .box-3 h2{
+    margin-bottom: 20px;
+  }
+  #section-a .box-1 p, #section-a .box-3 p{
+    font-size: 1.4em;
+  }
+  #section-b{
+    padding-top: 30px;
+  }
   #section-b .teaching{
     padding-bottom: 0px;
   }
+ 
 }
 
 /**/
