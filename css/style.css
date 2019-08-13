@@ -8,6 +8,7 @@ body{
   text-align: center;
   text-transform: uppercase;
 }
+
 h1, h2, h3{
   letter-spacing: 5px;
   margin: 0;
@@ -21,7 +22,9 @@ p{
 /* Header Nav */
 #header-nav{
   background-color: #07A6EF;
- padding: 10px;
+  padding: 10px;
+  border-top: 3px dotted #033C4F;
+  border-bottom: 3px dotted #033C4F;
 }
 header h1 {
   padding: 4px;
@@ -119,12 +122,15 @@ display: inline-block;
   background: #07A6EF;
   color: #fff;
   padding: 2em 1em;
+  border-top: 3px dotted #033C4F;
+  border-bottom: 3px dotted #033C4F;
 }
 #section-a ul, #section-a li{
   list-style-type: none;
   text-transform: none;
   margin: 0;
   padding: 0;
+
 }
 
 #section-a h3{
@@ -158,6 +164,7 @@ display: inline-block;
 #section-b {
   background: #464646;
   padding: 2em 1em 1em;
+ 
 }
 #section-b .content-title{
   color: #fff;
@@ -171,7 +178,10 @@ display: inline-block;
 #section-b .box{
   background: #fff;
   color: #000;
+  margin: 5%;
   padding-bottom: 40px;
+  padding: 10px;
+  border: 2px outset pink;
 }
 #section-b ul {
   list-style: none;
@@ -184,6 +194,7 @@ display: inline-block;
 #section-b{
   display: grid;
   grid-gap: 20px;
+  padding:10px;
   grid-template-areas: 
   "training"
   "teaching";
@@ -207,10 +218,13 @@ display: inline-block;
 #section-d{
   background-color: #07A6EF;
   padding: 2em 1em;
+  border-top: 3px dotted #033C4F;
+  border-bottom: 3px dotted #033C4F;
 }
+
  #section-d .box{
   background: #fff;
-  border: 3px solid #033C4F;
+  border: 3px solid black;
   color: #000;
 }
 .box-1{
